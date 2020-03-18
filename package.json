@@ -1,0 +1,42 @@
+{
+  "name": "@peterek/eslint-config-typescript",
+  "version": "0.0.0",
+  "description": "Eslint configuration for TypeScript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterekjs/eslint-config-typescript.git"
+  },
+  "keywords": [
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "style",
+    "style checker",
+    "style linter",
+    "typescript"
+  ],
+  "author": "Jiri Peterek <jiri.peterek@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterekjs/eslint-config-typescript/issues"
+  },
+  "homepage": "https://github.com/peterekjs/eslint-config-typescript#readme",
+  "peerDependencies": {
+    "eslint": "^6.0.0",
+    "typescript": "^3.5.0"
+  },
+  "dependencies": {
+    "@peterek/eslint-config-base": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint-import-resolver-typescript": "^2.0.0"
+  }
+}

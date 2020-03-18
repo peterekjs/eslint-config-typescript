@@ -1,3 +1,5 @@
+const braceStyle = require('./node_modules/@peterek/eslint-config-base/lib/brace-style')
+
 module.exports = {
     extends: [
         'plugin:import/typescript',
@@ -6,9 +8,36 @@ module.exports = {
     parserOptions: {
         parser: '@typescript-eslint/parser'
     },
-    plugins: ['@typescript-eslint'],
+    plugins: [
+        '@typescript-eslint'
+    ],
     rules: {
-
+        '@typescript-eslint/brace-style': braceStyle,
+        '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslint/no-unused-vars': [
+            2,
+            {
+                args: 'after-used',
+                argsIgnorePattern: '^_',
+                vars: 'local'
+            }
+        ],
+        '@typescript-eslint/interface-name-prefix': [
+            2,
+            { prefixWithI: 'always', allowUnderscorePrefix: true }
+        ],
+        '@typescript-eslint/member-delimiter-style': [
+            2,
+            {
+                multiline: {
+                    delimiter: 'none',
+                    requireLast: false
+                }
+            }
+        ],
+        '@typescript-eslint/no-empty-function': 0,
+        '@typescript-eslint/no-explicit-any': 0,
+        '@typescript-eslint/no-use-before-define': 0,
     },
     settings: {
         'import/extensions': [

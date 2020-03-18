@@ -38,14 +38,15 @@ module.exports = {
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-use-before-define': 0,
+        '@typescript-eslint/no-var-requires': 0
     },
     settings: {
         'import/extensions': [
             '.js',
             '.jsx',
+            '.json',
             '.ts',
             '.tsx',
-            '.json',
             '.vue'
         ],
         'import/parsers': {

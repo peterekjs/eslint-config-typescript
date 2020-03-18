@@ -1,4 +1,4 @@
-const braceStyle = require('./node_modules/@peterek/eslint-config-base/lib/brace-style')
+const braceStyle = require('@peterek/eslint-config-base/lib/brace-style')
 
 module.exports = {
     extends: [

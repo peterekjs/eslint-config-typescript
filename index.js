@@ -1,4 +1,5 @@
 const braceStyle = require('@peterek/eslint-config-base/lib/brace-style')
+const indentOptions = require('@peterek/eslint-config-indent/lib/indent')
 
 module.exports = {
     extends: [
@@ -22,6 +23,7 @@ module.exports = {
                 vars: 'local'
             }
         ],
+        '@typescript-eslint/indent': [2, 4, indentOptions],
         '@typescript-eslint/interface-name-prefix': [
             2,
             { prefixWithI: 'always', allowUnderscorePrefix: true }
@@ -38,7 +40,7 @@ module.exports = {
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-use-before-define': 0,
-        '@typescript-eslint/no-var-requires': 0
+        '@typescript-eslint/no-var-requires': 0,
     },
     settings: {
         'import/extensions': [
